@@ -1,3 +1,11 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/reportMerging/Form1.cs) (VB: [Form1.vb](./VB/reportMerging/Form1.vb))
+* [Program.cs](./CS/reportMerging/Program.cs) (VB: [Program.vb](./VB/reportMerging/Program.vb))
+* [XtraReport1.cs](./CS/reportMerging/XtraReport1.cs) (VB: [XtraReport1.vb](./VB/reportMerging/XtraReport1.vb))
+* [XtraReport2.cs](./CS/reportMerging/XtraReport2.cs) (VB: [XtraReport2.vb](./VB/reportMerging/XtraReport2.vb))
+<!-- default file list end -->
 # Runtime report merging
 
 
