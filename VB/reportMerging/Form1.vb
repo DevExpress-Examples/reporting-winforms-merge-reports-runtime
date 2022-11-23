@@ -7,8 +7,9 @@ Imports System.Drawing
 Imports System.Linq
 Imports System.Text
 Imports System.Windows.Forms
-Imports DevExpress.XtraReports.UI
 Imports System.Drawing.Printing
+Imports DevExpress.Drawing
+Imports DevExpress.XtraReports.UI
 Imports DevExpress.XtraPrinting
 Imports DevExpress.XtraPrinting.Native
 
@@ -37,7 +38,7 @@ Namespace reportMerging
 			Next x
 			link.PaperKind = PaperKind.Custom
 			link.CustomPaperSize = New Size(width, height)
-            link.Margins = New Margins(reports.First().Margins.Left, reports.First().Margins.Right, reports.First().Margins.Top, reports.Last().Margins.Bottom)
+            link.Margins = New DXMargins(reports.First().Margins.Left, reports.First().Margins.Right, reports.First().Margins.Top, reports.Last().Margins.Bottom)
 			AddHandler link.CreateDetailArea, AddressOf link_CreateDetailArea
 		End Sub
 		Public Sub CreateDocument()

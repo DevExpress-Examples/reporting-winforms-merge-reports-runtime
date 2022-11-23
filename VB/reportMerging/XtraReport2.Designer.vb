@@ -84,7 +84,7 @@ Namespace reportMerging
 			' 
 			Me.xrPageInfo1.BackColor = System.Drawing.Color.AntiqueWhite
 			Me.xrPageInfo1.Borders = (CType((((DevExpress.XtraPrinting.BorderSide.Left Or DevExpress.XtraPrinting.BorderSide.Top) Or DevExpress.XtraPrinting.BorderSide.Right) Or DevExpress.XtraPrinting.BorderSide.Bottom), DevExpress.XtraPrinting.BorderSide))
-			Me.xrPageInfo1.Font = New System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte(0)))
+			Me.xrPageInfo1.Font = New DevExpress.Drawing.DXFont("Times New Roman", 14.25F)
 			Me.xrPageInfo1.LocationFloat = New DevExpress.Utils.PointFloat(640.2957F, 0F)
 			Me.xrPageInfo1.Name = "xrPageInfo1"
 			Me.xrPageInfo1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
@@ -156,7 +156,7 @@ Namespace reportMerging
 			' xrLabel1
 			' 
 			Me.xrLabel1.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Customers.Country")})
-			Me.xrLabel1.Font = New System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, (CByte(0)))
+			Me.xrLabel1.Font = New DevExpress.Drawing.DXFont("Verdana", 18F, DevExpress.Drawing.DXFontStyle.Underline)
 			Me.xrLabel1.ForeColor = System.Drawing.Color.DarkRed
 			Me.xrLabel1.LocationFloat = New DevExpress.Utils.PointFloat(0F, 0F)
 			Me.xrLabel1.Name = "xrLabel1"
@@ -173,7 +173,7 @@ Namespace reportMerging
 			Me.DataMember = "Customers"
 			Me.DataSource = Me.nwindDataSet1
 			Me.Landscape = True
-			Me.Margins = New System.Drawing.Printing.Margins(100, 100, 100, 102)
+			Me.Margins = New DevExpress.Drawing.DXMargins(100, 100, 100, 102)
 			Me.PageHeight = 827
 			Me.PageWidth = 1169
 			Me.PaperKind = System.Drawing.Printing.PaperKind.A4

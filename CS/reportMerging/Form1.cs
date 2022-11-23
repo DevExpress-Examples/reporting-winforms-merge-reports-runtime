@@ -6,8 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using DevExpress.XtraReports.UI;
 using System.Drawing.Printing;
+using DevExpress.Drawing;
+using DevExpress.XtraReports.UI;
 using DevExpress.XtraPrinting;
 using DevExpress.XtraPrinting.Native;
 
@@ -35,7 +36,7 @@ namespace reportMerging {
             }
             link.PaperKind = PaperKind.Custom;
             link.CustomPaperSize = new Size(width, height);
-            link.Margins = new Margins(reports.First<XtraReport>().Margins.Left, reports.First<XtraReport>().Margins.Right, reports.First<XtraReport>().Margins.Top, reports.Last<XtraReport>().Margins.Bottom);
+            link.Margins = new DXMargins(reports.First<XtraReport>().Margins.Left, reports.First<XtraReport>().Margins.Right, reports.First<XtraReport>().Margins.Top, reports.Last<XtraReport>().Margins.Bottom);
             link.CreateDetailArea += link_CreateDetailArea;
         }
         public void CreateDocument() {

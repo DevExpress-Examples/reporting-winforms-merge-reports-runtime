@@ -86,7 +86,7 @@
             this.xrPageInfo1.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrPageInfo1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrPageInfo1.Font = new DevExpress.Drawing.DXFont("Times New Roman", 14.25F);
             this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(640.2957F, 0F);
             this.xrPageInfo1.Name = "xrPageInfo1";
             this.xrPageInfo1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -170,7 +170,7 @@
             // 
             this.xrLabel1.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Customers.Country")});
-            this.xrLabel1.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrLabel1.Font = new DevExpress.Drawing.DXFont("Verdana", 18F, DevExpress.Drawing.DXFontStyle.Underline);
             this.xrLabel1.ForeColor = System.Drawing.Color.DarkRed;
             this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrLabel1.Name = "xrLabel1";
@@ -192,7 +192,7 @@
             this.DataMember = "Customers";
             this.DataSource = this.nwindDataSet1;
             this.Landscape = true;
-            this.Margins = new System.Drawing.Printing.Margins(100, 100, 100, 102);
+            this.Margins = new DevExpress.Drawing.DXMargins(100, 100, 100, 102);
             this.PageHeight = 827;
             this.PageWidth = 1169;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
