@@ -11,6 +11,7 @@ using DevExpress.Drawing;
 using DevExpress.XtraReports.UI;
 using DevExpress.XtraPrinting;
 using DevExpress.XtraPrinting.Native;
+using DevExpress.Drawing.Printing;
 
 namespace reportMerging {
     public partial class Form1 : Form {
@@ -34,7 +35,7 @@ namespace reportMerging {
                 height += x.PageHeight;
                 width = Math.Max(width, x.PageWidth);
             }
-            link.PaperKind = PaperKind.Custom;
+            link.PaperKind = DXPaperKind.Custom;
             link.CustomPaperSize = new Size(width, height);
             link.Margins = new DXMargins(reports.First<XtraReport>().Margins.Left, reports.First<XtraReport>().Margins.Right, reports.First<XtraReport>().Margins.Top, reports.Last<XtraReport>().Margins.Bottom);
             link.CreateDetailArea += link_CreateDetailArea;
@@ -63,7 +64,7 @@ namespace reportMerging {
                             Rect = section.Rect,
                             LineDirection = DevExpress.XtraReports.UI.LineDirection.Slant,
                             ForeColor = Color.Red,
-                            LineStyle = System.Drawing.Drawing2D.DashStyle.Dash,
+                            LineStyle = DXDashStyle.Dash,
                             BorderWidth = 0
                         });
                         section.Bricks.Add(new LineBrick() {
@@ -71,7 +72,7 @@ namespace reportMerging {
                             LineDirection = DevExpress.XtraReports.UI.LineDirection.BackSlant,
                             ForeColor = Color.Red,
                             BackColor = Color.Transparent,
-                            LineStyle = System.Drawing.Drawing2D.DashStyle.Dash,
+                            LineStyle = DXDashStyle.Dash,
                             BorderWidth = 1,
                             BorderColor = Color.Red,
                             BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Dash,
